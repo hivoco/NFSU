@@ -127,8 +127,8 @@ const App = () => {
             className={`mx-auto w-auto transition-all duration-700 ease-in-out ${showRegister ? "h-[20vh] -translate-y-4" : "h-[43vh]"
               } ${animation ? "translate-y-0 opacity-100" : "translate-y-30 opacity-0"}`}
             alt="nfsu"
-            width={300}
-            height={346}
+            width={280}
+            height={300}
             src="/images/image.png"
             priority={true}
             quality={100}
