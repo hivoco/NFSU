@@ -86,7 +86,7 @@ const LeaderBoard = () => {
             priority={true}
           /> */}
           <div className="font-extrabold text-3xl/9 ">
-             <Image src={"/images/image.png"} alt="Logo" width={100} height={100} />
+             <Image src={"/images/image.png"} alt="Logo" width={70} height={70} />
           </div>
         </section>
 
@@ -115,14 +115,14 @@ const LeaderBoard = () => {
             </h2>
 
             <Image
-              className={`h48 h-[23.5vh] w-auto
-            transition-all duration-700 ease-in-out ${
+              className={` h-[20.5vh] w-auto
+            transition-all duration-700 ease-in-out mt-2 ${
               animation ? "scale-100" : "scale-50"
             }
               `}
               alt="prize with glare in bg"
-              width={180}
-              height={180}
+              width={150}
+              height={150}
               src="/images/trophy.png"
               quality={100}
               priority={true}
