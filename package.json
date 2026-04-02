@@ -1,0 +1,28 @@
+{
+  "name": "nfsu",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8147",
+    "build": "next build",
+    "start": "next start -p 8147",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.510.0",
+    "mysql2": "^3.20.0",
+    "next": "^15.3.2",
+    "react": "^19.0.0",
+    "react-audio-voice-recorder": "^2.2.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
