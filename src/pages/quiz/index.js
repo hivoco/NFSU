@@ -23,8 +23,8 @@ const AnswerPopup = ({ isVisible, isCorrect }) => {
           <Image
             src="/right.png"
             alt="Correct answer"
-            width={234}
-            height={144}
+            width={220}
+            height={135}
             className="w-full object-contain"
             priority
           />
