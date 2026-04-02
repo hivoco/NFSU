@@ -27,7 +27,7 @@ function Result() {
   }, []);
 
   return (
-    <Layout>
+    <Layout bgImage="/images/bg-quiz.png">
       <div
         className={`bg-[url("/main-bg.png")] bg-no-repeat bg-cover bg-center  h-svh mx-auto flex flex-col p-7 transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"
           }`}

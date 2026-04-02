@@ -70,7 +70,7 @@ const LeaderBoard = () => {
     <Loading />;
   }
   return (
-      <Layout animation={animation} className={"sm:h-[110vh] pb-[vh]"}>
+      <Layout animation={animation} bgImage="/images/bg-quiz.png" className={"sm:h-[110vh] pb-[vh]"}>
         <section
           className={`flex w-full  gap-2.5 items-center justify-center pt16 pb7 pt-[8vh] pb-[3.5vh]
         transition-all duration-1000 ease-in-out ${
