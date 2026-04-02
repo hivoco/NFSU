@@ -29,7 +29,7 @@ const AnswerPopup = ({ isVisible, isCorrect }) => {
             priority
           />
           <h3 className="font-bold text-2xl text-white">
-            Glowing! <br /> You got it right.
+            Wohoo! <br /> You got it right.
           </h3>
         </div>
       ) : (
@@ -43,7 +43,6 @@ const AnswerPopup = ({ isVisible, isCorrect }) => {
             priority
           />
           <h3 className="font-bold text-2xl text-white">
-            Not your best <br /> glow yet!<br />
             Try the next one.
           </h3>
         </div>
@@ -287,9 +286,9 @@ const Quiz = () => {
   }
 
   return (
-    <Layout>
+    <Layout bgImage="/images/bg-quiz.png">
       <div
-        className={`pt-[3.5vh] pb-[14vh] h-svh max-w-md mx-auto grid transition-all duration-500 ease-in-out ${animation ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+        className={`pt-[3.5vh] pb-[14vh] h-svh max-w-md mx-auto grid overflow-y-auto transition-all duration-500 ease-in-out ${animation ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
       >
         <section className="w-full flex flex-col gap-1.5 px-6 relative z-50">
@@ -342,7 +341,7 @@ const Quiz = () => {
         </section>
 
         <section className="w-full flex flex-col gap-6 px-6 relative z-50 mt-6">
-          <div className="font-semibold flex justify-center items-center h-[196px] backdrop-blur-xs bg-[#007B480D] text-base/5 tracking-wide outline-[#007B48] outline-1 text-[#007B48] p-3.5 rounded-2xl">
+          <div className="font-semibold flex justify-center items-center h-[196px] backdrop-blur-xs bg-[#007B480D] text-sm/5 tracking-wide outline-[#007B48] outline-1 text-[#007B48] p-3.5 rounded-2xl">
             {currentQuestion.question}
           </div>
 
@@ -366,8 +365,8 @@ const Quiz = () => {
                   disabled={selectedOption !== null}
                   className={`
                   flex items-center justify-between 
-                  outline outline-[#007B48] p-3.5 rounded-sm 
-                  capitalize font-semibold text-left text-base/5 text-[#007B48] tracking-wide w-full
+                  outline outline-[#007B48] p-2.5 rounded-sm
+                  capitalize font-semibold text-left text-sm/5 text-[#007B48] tracking-wide w-full
                   transition-all
                   ${!selectedOption
                       ? "cursor-pointer hover:bg-green-100/10"

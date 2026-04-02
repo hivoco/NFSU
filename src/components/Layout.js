@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-const Layout = ({ children, diffTopImage = false, className, animation }) => {
+const Layout = ({ children, diffTopImage = false, className, animation, bgImage = "/images/bg.png" }) => {
   // every element is absolute here
   return (
-    <div className={`h-svh w-full bg-[url(/images/bg.png)] bg-no-repeat bg-cover bg-center overflow-hidden relative ${className}`}>
+    <div style={{ backgroundImage: `url(${bgImage})` }} className={`h-svh w-full bg-no-repeat bg-cover bg-center overflow-hidden relative ${className}`}>
       {/* {!diffTopImage && (
         <Image
           className={`absolute w-full h-auto  top-0 left-0 z-0
